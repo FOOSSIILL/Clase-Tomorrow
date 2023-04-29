@@ -21,6 +21,6 @@
     border: 10px solid black;
 }
 
-.box:nth-child(2n) {
+.box:nth-child(odd) {
     background-color: var(--bg-color);
 }
