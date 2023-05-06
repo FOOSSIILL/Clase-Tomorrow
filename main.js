@@ -1,6 +1,6 @@
 /**------------Tipos de datos---------------- */
 
-//Number
+/*Number
 const num = 1;
 
 console.log(bool);
@@ -21,7 +21,7 @@ let petName = null;
 let myUndefinedValue;
 
 //object
-const obj = {name: "Juan", 'age': 23};
+const obj = {name: "Juan", 'age': 23};*/
 
 /**-------------------Valores y Referencias----------------- */
 
@@ -42,20 +42,20 @@ x /= 3;
 
 console.log(x);
 
-//Operadores de comparación
+/*Operadores de comparación
 console.log(x == "5"); //Igualdad
 console.log(x != "5"); //desigualdad
 console.log(x === "5");//Igualdad estricta
-console.log(x !== "5"); //Desigualdad estricta
+console.log(x !== "5"); //Desigualdad estricta*/
 /**
  * Mayor >
  * Maoyr o igual >=
  * Menor <
  * Menor o igual <=
  */
-console.log(x <= 5);
+/*console.log(x <= 5);*/
 
-//Operadores aritméticos
+/*Operadores aritméticos
 // + - * /
 const modulo = 12 % 5;//Modulo = residuo de división
 
@@ -64,52 +64,66 @@ x--;// x -+ 1
 -x;
 x ** 3;
 
-console.log(x);
+console.log(x);*/
 
-//Operadores lógicos
+/*Operadores lógicos
 console.log(x > 1 && false);
 console.log(x > 1 || false);
-console.log(x > 1 && !false);
+console.log(x > 1 && !false);*7
 
-//Operadores de string
+/*Operadores de string
 let myString = "hola";
-myString += x;
+myString += x;*/
 
-//Operador condicional
-(x > 1) ? -x : x;
+/*Operador condicional
+(x > 1) ? -x : x;*/
 
-//Operador unitario
+/*Operador unitario
 typeof [10];
-delete obj.age;
+delete obj.age;*/
 
 /**---------------Coercion-------------------- */
 
-//Truthy 
+/*Truthy 
 if(true);
 if([]);
 if({});
 if(1);
 if(-1);
-if("0");
+if("0");*/
 
-//Falsy
+/*Falsy
 if(false);
 if(0);
 if(-0);
 if("");
 if(null);
 if(undefined);
-if(NaN);
+if(NaN);*/
 
-function sayName(name) {
-    if(!name) {
-        console.log("No hay nombre");
-    } else {
-        console.log("El nombre es" + name);
+/**----------------------Arrays------------------ */
+/*const text = "hola"*/
+/*onst myArray = text.split("");*/ 
+
+/*myArray.reverse(); // [10, "hola", 4, 2]*/
+
+/*const otherArray = myArray.slice(); 
+
+myArray.push(11);*/
+
+const myArray = ["hola", "adios", "carro", "moto", "pez", "perro"];
+
+myArray.sort((value1, value2) => {
+    //Retorna positivo = value1 se coloca depues que value2
+    //Retorna negativo = value2 se coloca depues que value1
+    //Retorna 0 = no cambia posicion
+    if ( value1.length < value2.length) {
+        return 1;
+    }else if (value1.length < value2.length) {
+        return -1;
+    }else {
+        return 0;
     }
-}
+});
 
-sayName("Juan");
-
-sayName("");
-sayName();
+console.log(myArray);
