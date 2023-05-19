@@ -1,10 +1,10 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
+:root {
+    --name-color:red;
 }
 
-:root {
-    --bg-color: red;
+*{
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .box{
@@ -21,6 +21,8 @@
     border: 10px solid black;
 }
 
-.box:nth-child(odd) {
-    background-color: var(--bg-color);
+.name-text {
+    border-left: 2px solid var(--name-color);
+    color: var(--name-color);
+    margin: 10px;
 }

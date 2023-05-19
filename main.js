@@ -24,23 +24,24 @@ let myUndefinedValue;
 const obj = {name: "Juan", 'age': 23};*/
 
 /**-------------------Valores y Referencias----------------- */
-
+/*
 let a = [10];
 let b =  [10];
 b.push(11);
 
-console.log(a,b);
+console.log(a,b);*/
 
 /**-----------------------Operadores--------------------------------------- */
 
 //Operadores de asignación
+/*
 let x = 5;
 x+= 6; 
 x -= 10;
 x*= 2;
 x /= 3;
 
-console.log(x);
+console.log(x);*/
 
 /*Operadores de comparación
 console.log(x == "5"); //Igualdad
@@ -111,7 +112,7 @@ if(NaN);*/
 
 myArray.push(11);*/
 
-const myArray = ["hola", "adios", "carro", "moto", "pez", "perro"];
+/*const myArray = ["hola", "adios", "carro", "moto", "pez", "perro"];
 
 myArray.sort((value1, value2) => {
     //Retorna positivo = value1 se coloca depues que value2
@@ -126,4 +127,64 @@ myArray.sort((value1, value2) => {
     }
 });
 
-console.log(myArray);
+console.log(myArray);*/
+
+
+//DOM - Document Object Model
+const container = document.querySelector('.container');
+const nameInput = document.querySelector('input');
+const btn =document.querySelector('button');
+let name = '';
+
+nameInput.addEventListener('input', (event) => {
+    name = event.target.value;
+})
+
+btn.addEventListener('click', () =>{
+    const nameElement = document.createElement('div');
+    const prefix = container.dataset.prefix;
+    nameElement.innerText = prefix + name;
+    nameElement.classList.add('name-text'); 
+
+    nameElement.addEventListener('click', () => {
+        nameElement.remove();
+    });
+    container.appendChild(nameElement);
+})
+
+
+
+/**
+ * click
+ * focus
+ * blur
+ * mouseenter
+ * mouseleave
+ * 
+ * input
+ * keydown
+ * change     
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
